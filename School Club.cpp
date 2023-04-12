@@ -6,32 +6,7 @@
 #include <string>
 using namespace std;
 
-class SchoolClub {
-public:
-    string name;
-    string leader;
-    vector<string> members;
-    int memberLimit;
-
-    void addMember(string m) {
-        if (members.size() < memberLimit) {
-            members.push_back(m);
-        }
-        else {
-            cout << name << " is already at capacity.";
-        }
-    }
-
-    void display() {
-        cout << name << " is led by " << leader << endl;
-        cout << "Membership: " << members.size() << endl << endl;
-        for (int i = 0; i < members.size(); i++) {
-            cout << members[i] << endl;
-        }
-        cout << "This club can support " << memberLimit - members.size() << " additional members" << endl << endl;
-    }
-};
-
+//Put your class here
 
 int main()
 {
